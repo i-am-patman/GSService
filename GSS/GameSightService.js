@@ -40,7 +40,7 @@ let getExternalIDs = function (platformName, platformAccountId, userName) {
                 external_id: userName
             }
         ];
-    } else if (platform.includes('steam'))
+    } else if (platformName.includes('steam'))
     {
         external_ids = [
             {
@@ -48,7 +48,7 @@ let getExternalIDs = function (platformName, platformAccountId, userName) {
                 external_id: platformAccountId
             }
         ];
-    } else if(platform.includes('epic'))
+    } else if(platformName.includes('epic'))
     {
         external_ids = [
             {
